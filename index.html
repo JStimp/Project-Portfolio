@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manufacturing Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <div class="brand">Your Name</div>
+      <div class="toplinks">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Manufacturing Engineer Portfolio</p>
+      <h1>Process improvement, automation, and practical engineering results.</h1>
+      <p class="hero-text">
+        I build solutions that improve throughput, reduce waste, and make manufacturing systems more reliable.
+        This portfolio highlights engineering projects through clear case studies with measurable outcomes.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#projects">View Projects</a>
+        <a class="button secondary" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="section-label">Featured Work</p>
+        <h2>Projects</h2>
+        <p>Select a project from the ribbon to view the case study.</p>
+      </div>
+
+      <div class="project-ribbon" role="tablist" aria-label="Project navigation">
+        <button class="ribbon-tab active" data-project="project-1" role="tab" aria-selected="true">Fixture Redesign</button>
+        <button class="ribbon-tab" data-project="project-2" role="tab" aria-selected="false">Assembly Automation</button>
+        <button class="ribbon-tab" data-project="project-3" role="tab" aria-selected="false">Process Data Dashboard</button>
+        <button class="ribbon-tab" data-project="project-4" role="tab" aria-selected="false">Quality Improvement</button>
+      </div>
+
+      <div class="project-panels">
+        <article class="project-card active" id="project-1" role="tabpanel">
+          <div class="project-media placeholder-box">Add project photo, CAD render, or prototype image here</div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>SolidWorks</span>
+              <span>CNC</span>
+              <span>DFM</span>
+            </div>
+            <h3>Fixture Redesign for Faster CNC Setup</h3>
+            <div class="case-grid">
+              <div>
+                <h4>Problem</h4>
+                <p>Describe the setup issue, bottleneck, or inconsistency you needed to solve.</p>
+              </div>
+              <div>
+                <h4>Process</h4>
+                <p>Explain how you designed, tested, iterated, and validated the fixture.</p>
+              </div>
+              <div>
+                <h4>Results</h4>
+                <p>Add measurable outcomes like setup time reduction, scrap reduction, or cost savings.</p>
+              </div>
+              <div>
+                <h4>Takeaways</h4>
+                <p>Share what you learned and what you would improve in the next revision.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" id="project-2" role="tabpanel" hidden>
+          <div class="project-media placeholder-box">Add automation cell photo, diagram, or controls screenshot here</div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>Automation</span>
+              <span>PLC</span>
+              <span>Lean</span>
+            </div>
+            <h3>Assembly Automation Improvement</h3>
+            <div class="case-grid">
+              <div>
+                <h4>Problem</h4>
+                <p>Summarize the manual process and the main pain points affecting output or quality.</p>
+              </div>
+              <div>
+                <h4>Process</h4>
+                <p>Show the sequence of design decisions, prototyping, controls logic, and deployment.</p>
+              </div>
+              <div>
+                <h4>Results</h4>
+                <p>List throughput increase, labor savings, reduced cycle time, or reliability gains.</p>
+              </div>
+              <div>
+                <h4>Takeaways</h4>
+                <p>Explain the practical lessons from integrating automation into the line.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" id="project-3" role="tabpanel" hidden>
+          <div class="project-media placeholder-box">Add dashboard image, charts, or workflow visual here</div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>Python</span>
+              <span>Excel</span>
+              <span>Analytics</span>
+            </div>
+            <h3>Process Data Dashboard</h3>
+            <div class="case-grid">
+              <div>
+                <h4>Problem</h4>
+                <p>Describe the visibility gap in production data or decision-making.</p>
+              </div>
+              <div>
+                <h4>Process</h4>
+                <p>Explain how you collected, cleaned, analyzed, and presented the data.</p>
+              </div>
+              <div>
+                <h4>Results</h4>
+                <p>Add metrics like downtime reduction, faster reporting, or improved issue detection.</p>
+              </div>
+              <div>
+                <h4>Takeaways</h4>
+                <p>Share what this project taught you about operations and data-driven decisions.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" id="project-4" role="tabpanel" hidden>
+          <div class="project-media placeholder-box">Add inspection photo, chart, or process map here</div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>Quality</span>
+              <span>Root Cause</span>
+              <span>Continuous Improvement</span>
+            </div>
+            <h3>Quality Improvement Initiative</h3>
+            <div class="case-grid">
+              <div>
+                <h4>Problem</h4>
+                <p>Outline the defect pattern, recurring issue, or process instability.</p>
+              </div>
+              <div>
+                <h4>Process</h4>
+                <p>Walk through your root cause analysis, testing, and corrective actions.</p>
+              </div>
+              <div>
+                <h4>Results</h4>
+                <p>Include defect reduction, yield improvements, or warranty savings if applicable.</p>
+              </div>
+              <div>
+                <h4>Takeaways</h4>
+                <p>Note the long-term process improvements and what made them stick.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section" id="about">
+      <div>
+        <p class="section-label">Background</p>
+        <h2>About</h2>
+        <p>
+          Write a short intro here about your manufacturing engineering background, your interests,
+          and the kinds of systems or improvements you enjoy working on.
+        </p>
+      </div>
+      <div class="skills-card">
+        <h3>Tools & Skills</h3>
+        <div class="skills-list">
+          <span>SolidWorks</span>
+          <span>CAD</span>
+          <span>Python</span>
+          <span>Excel</span>
+          <span>Lean Manufacturing</span>
+          <span>Root Cause Analysis</span>
+          <span>Process Improvement</span>
+          <span>Automation</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <p class="section-label">Contact</p>
+      <h2>Let’s connect</h2>
+      <p>Add your email, LinkedIn, resume link, or any other contact info here.</p>
+      <a class="button primary" href="mailto:youremail@example.com">youremail@example.com</a>
+    </section>
+  </main>
+
+  <script>
+    const tabs = document.querySelectorAll('.ribbon-tab');
+    const panels = document.querySelectorAll('.project-card');
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const targetId = tab.getAttribute('data-project');
+
+        tabs.forEach((item) => {
+          item.classList.remove('active');
+          item.setAttribute('aria-selected', 'false');
+        });
+
+        panels.forEach((panel) => {
+          panel.classList.remove('active');
+          panel.hidden = true;
+        });
+
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+
+        const activePanel = document.getElementById(targetId);
+        activePanel.classList.add('active');
+        activePanel.hidden = false;
+      });
+    });
+  </script>
+</body>
+</html>
