@@ -11,8 +11,7 @@
   <header class="site-header">
     <nav class="navbar">
       <a href="#" class="logo-lockup">
-        <!-- Replace with official Cal Poly logo artwork only if approved for your use -->
-        <img src="cal-poly-logo-placeholder.png" alt="Cal Poly Logo" class="logo-img" />
+        <span class="logo-mark" aria-hidden="true">CP</span>
         <span class="logo-text">[Department / Program Name]</span>
       </a>
 
@@ -57,8 +56,14 @@
       </div>
 
       <div class="project-grid">
-        <article class="project-card">
-          <div class="project-image">[Project Image]</div>
+        <a class="project-card project-preview" href="projects/project-name-01/index.html" aria-label="Open [Project Name 01] project page">
+          <div class="project-image project-image--photo">
+            <img src="images/IMG_8188.JPG" alt="[Project Name 01] preview" />
+            <div class="project-preview-overlay" aria-hidden="true">
+              <strong class="project-preview-title">[Project Name 01]</strong>
+              <span class="project-preview-cta">View project</span>
+            </div>
+          </div>
           <div class="project-content">
             <p class="project-tag">[Course / Lab / Team]</p>
             <h3>[Project Name 01]</h3>
@@ -73,10 +78,16 @@
               <li><strong>Outcome:</strong> [Result / Metric / Deliverable]</li>
             </ul>
           </div>
-        </article>
+        </a>
 
-        <article class="project-card">
-          <div class="project-image">[Project Image]</div>
+        <a class="project-card project-preview" href="projects/project-name-02/index.html" aria-label="Open [Project Name 02] project page">
+          <div class="project-image project-image--placeholder">
+            <span>[Project Image]</span>
+            <div class="project-preview-overlay" aria-hidden="true">
+              <strong class="project-preview-title">[Project Name 02]</strong>
+              <span class="project-preview-cta">View project</span>
+            </div>
+          </div>
           <div class="project-content">
             <p class="project-tag">[Internship / Research / Competition]</p>
             <h3>[Project Name 02]</h3>
@@ -91,10 +102,16 @@
               <li><strong>Outcome:</strong> [Result / Metric / Deliverable]</li>
             </ul>
           </div>
-        </article>
+        </a>
 
-        <article class="project-card">
-          <div class="project-image">[Project Image]</div>
+        <a class="project-card project-preview" href="projects/project-name-03/index.html" aria-label="Open [Project Name 03] project page">
+          <div class="project-image project-image--placeholder">
+            <span>[Project Image]</span>
+            <div class="project-preview-overlay" aria-hidden="true">
+              <strong class="project-preview-title">[Project Name 03]</strong>
+              <span class="project-preview-cta">View project</span>
+            </div>
+          </div>
           <div class="project-content">
             <p class="project-tag">[Capstone / Personal Build]</p>
             <h3>[Project Name 03]</h3>
@@ -109,7 +126,7 @@
               <li><strong>Outcome:</strong> [Result / Metric / Deliverable]</li>
             </ul>
           </div>
-        </article>
+        </a>
       </div>
     </section>
 
@@ -139,7 +156,7 @@
 
     <section id="contact" class="section contact-section">
       <p class="eyebrow">Contact</p>
-      <h2>Let’s Connect</h2>
+      <h2>Let's Connect</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this
         text with a short invitation to contact you.
@@ -154,7 +171,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>© [Year] Jared Stimpson. Engineering Project Portfolio.</p>
+    <p>&copy; [Year] Jared Stimpson. Engineering Project Portfolio.</p>
   </footer>
 </body>
 </html>
