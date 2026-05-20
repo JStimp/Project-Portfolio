@@ -32,9 +32,7 @@ a {
 }
 
 .site-header {
-  background:
-    linear-gradient(rgba(21, 71, 52, 0.88), rgba(21, 71, 52, 0.88)),
-    url("hero-engineering-placeholder.jpg");
+  background: linear-gradient(rgba(21, 71, 52, 0.92), rgba(21, 71, 52, 0.92));
   background-size: cover;
   background-position: center;
   color: var(--off-white);
@@ -56,6 +54,18 @@ a {
   align-items: center;
   gap: 0.9rem;
   font-weight: 700;
+}
+
+.logo-mark {
+  width: 46px;
+  height: 46px;
+  border: 2px solid var(--mustang-gold);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--mustang-gold);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
 }
 
 .logo-img {
@@ -147,13 +157,42 @@ a {
 
 .about-section {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 3rem;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(2rem, 6vw, 5rem);
   align-items: start;
 }
 
-.about-section p:last-child {
-  font-size: 1.1rem;
+.about-heading {
+  border-left: 5px solid var(--mustang-gold);
+  padding-left: 1.25rem;
+}
+
+.about-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  max-width: 720px;
+}
+
+.about-title span {
+  display: block;
+}
+
+.about-copy {
+  max-width: 680px;
+  padding-top: 1.6rem;
+}
+
+.about-lead {
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  line-height: 1.35;
+  color: var(--poly-green);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.about-copy p:not(.about-lead) {
+  font-size: 1.05rem;
   color: var(--muted);
 }
 
@@ -169,9 +208,25 @@ a {
   border-radius: 1.25rem;
   overflow: hidden;
   box-shadow: var(--shadow);
+  display: block;
+  height: 100%;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.project-card:hover,
+.project-card:focus-visible {
+  transform: translateY(-6px);
+  border-color: rgba(189, 139, 19, 0.55);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.16);
+}
+
+.project-card:focus-visible {
+  outline: 3px solid rgba(189, 139, 19, 0.45);
+  outline-offset: 4px;
 }
 
 .project-image {
+  aspect-ratio: 4 / 3;
   min-height: 190px;
   background:
     linear-gradient(135deg, rgba(21, 71, 52, 0.9), rgba(189, 139, 19, 0.8));
@@ -179,6 +234,83 @@ a {
   display: grid;
   place-items: center;
   font-weight: 700;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image > span {
+  position: relative;
+  z-index: 1;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.project-preview-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 1.35rem;
+  background:
+    linear-gradient(180deg, rgba(21, 71, 52, 0.08), rgba(21, 71, 52, 0.92));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.35rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.project-preview-title {
+  color: var(--off-white);
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+.project-preview-cta {
+  color: var(--mustang-gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.project-preview-cta::after {
+  content: " ->";
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover .project-preview-overlay,
+.project-card:focus-visible .project-preview-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card:hover .project-image img,
+.project-card:focus-visible .project-image img {
+  filter: saturate(1.05) contrast(1.05);
+  transform: scale(1.06);
+}
+
+.project-card:hover .project-preview-cta::after,
+.project-card:focus-visible .project-preview-cta::after {
+  animation: preview-nudge 0.65s ease-in-out infinite alternate;
+}
+
+@keyframes preview-nudge {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(5px);
+  }
 }
 
 .project-content {
@@ -281,6 +413,81 @@ a {
   font-size: 0.9rem;
 }
 
+.project-detail-header {
+  min-height: auto;
+}
+
+.project-hero {
+  padding-top: 5.5rem;
+}
+
+.project-hero h1 {
+  max-width: 920px;
+}
+
+.project-detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.project-detail-main,
+.project-sidebar {
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.project-detail-main {
+  padding: 2rem;
+}
+
+.project-detail-main h2 {
+  margin-bottom: 1rem;
+}
+
+.project-detail-main p {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.project-sidebar {
+  padding: 1.5rem;
+}
+
+.project-sidebar h3 {
+  color: var(--poly-green);
+  margin-bottom: 0.75rem;
+}
+
+.project-media-frame {
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--sand);
+  min-height: 320px;
+}
+
+.project-media-frame img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-media-frame--empty {
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-weight: 700;
+  background:
+    linear-gradient(135deg, rgba(21, 71, 52, 0.12), rgba(189, 139, 19, 0.18)),
+    var(--sand);
+}
+
 @media (max-width: 900px) {
   .navbar,
   .about-section {
@@ -293,6 +500,7 @@ a {
   }
 
   .about-section,
+  .project-detail-layout,
   .project-grid,
   .skills-grid {
     grid-template-columns: 1fr;
@@ -314,6 +522,12 @@ a {
 
   .logo-img {
     height: 38px;
+  }
+
+  .logo-mark {
+    width: 38px;
+    height: 38px;
+    font-size: 0.72rem;
   }
 
   .nav-links {
