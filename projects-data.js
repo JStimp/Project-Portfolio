@@ -49,34 +49,13 @@ window.portfolioProjects = [
     url: "projects/project-name-01/index.html"
   },
   {
-    id: "project-name-04",
+    id: "project-name-02",
     order: 2,
     featured: true,
-    title: "[Project Name 04]",
+    title: "[Project Name 02]",
     tag: "[Course / Lab / Team]",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this with a short project summary.",
-    story:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this section with a clear explanation of the engineering challenge, design decisions, testing process, and final outcome.",
-    role: "[Your Role]",
-    tools: ["Tool 1", "Tool 2", "Tool 3"],
-    timeline: "[Quarter / Year]",
-    outcome: "[Result / Metric / Deliverable]",
-    image: "",
-    detailImage: "",
-    imageAlt: "",
-    placeholder: "[Project Image]",
-    mediaPlaceholder: "[Add project media here]",
-    url: "projects/project-name-04/index.html"
-  },
-  {
-    id: "project-name-02",
-    order: 3,
-    featured: true,
-    title: "[Project Name 02]",
-    tag: "[Internship / Research / Competition]",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus sapien vitae sem pretium, nec tincidunt eros suscipit.",
     story:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this section with a clear explanation of the engineering challenge, design decisions, testing process, and final outcome.",
     role: "[Your Role]",
@@ -92,9 +71,30 @@ window.portfolioProjects = [
   },
   {
     id: "project-name-03",
-    order: 4,
+    order: 3,
     featured: true,
     title: "[Project Name 03]",
+    tag: "[Internship / Research / Competition]",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus sapien vitae sem pretium, nec tincidunt eros suscipit.",
+    story:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this section with a clear explanation of the engineering challenge, design decisions, testing process, and final outcome.",
+    role: "[Your Role]",
+    tools: ["Tool 1", "Tool 2", "Tool 3"],
+    timeline: "[Quarter / Year]",
+    outcome: "[Result / Metric / Deliverable]",
+    image: "",
+    detailImage: "",
+    imageAlt: "",
+    placeholder: "[Project Image]",
+    mediaPlaceholder: "[Add project media here]",
+    url: "projects/project-name-03/index.html"
+  },
+  {
+    id: "project-name-04",
+    order: 4,
+    featured: true,
+    title: "[Project Name 04]",
     tag: "[Capstone / Personal Build]",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ligula vel ipsum bibendum tincidunt non at erat.",
@@ -109,7 +109,7 @@ window.portfolioProjects = [
     imageAlt: "",
     placeholder: "[Project Image]",
     mediaPlaceholder: "[Add project media here]",
-    url: "projects/project-name-03/index.html"
+    url: "projects/project-name-04/index.html"
   },
   {
     id: "project-name-05",
@@ -131,5 +131,26 @@ window.portfolioProjects = [
     placeholder: "[Project Image]",
     mediaPlaceholder: "[Add project media here]",
     url: "projects/project-name-05/index.html"
+  },
+  {
+    id: "project-name-06",
+    order: 6,
+    featured: true,
+    title: "[Project Name 06]",
+    tag: "[Capstone / Personal Build]",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this with a short project summary.",
+    story:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this section with a clear explanation of the engineering challenge, design decisions, testing process, and final outcome.",
+    role: "[Your Role]",
+    tools: ["Tool 1", "Tool 2", "Tool 3"],
+    timeline: "[Quarter / Year]",
+    outcome: "[Result / Metric / Deliverable]",
+    image: "",
+    detailImage: "",
+    imageAlt: "",
+    placeholder: "[Project Image]",
+    mediaPlaceholder: "[Add project media here]",
+    url: "projects/project-name-06/index.html"
   }
 ];
