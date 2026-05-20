@@ -394,24 +394,24 @@ a {
 }
 
 .contact-links a {
-  border: 1px solid var(--mustang-gold);
-  background-color: var(--poly-green);
+  border: 1px solid var(--poly-green);
+  background-color: transparent;
   background-image: none;
-  color: var(--mustang-gold);
+  color: var(--poly-green);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.7rem;
   width: fit-content;
   max-width: 100%;
-  min-height: 4rem;
+  min-height: 3.75rem;
   padding: 0.7rem 1.15rem;
-  border-radius: 999px;
+  border-radius: 0.85rem;
   font-weight: 800;
   line-height: 1;
   white-space: nowrap;
-  box-shadow: 0 12px 26px rgba(21, 71, 52, 0.16);
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+  box-shadow: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 }
 
 .contact-links a span {
@@ -429,9 +429,10 @@ a {
 }
 
 .contact-links a:hover {
-  border-color: #D8AA35;
-  color: #D8AA35;
-  box-shadow: 0 16px 32px rgba(21, 71, 52, 0.22);
+  border-color: var(--mustang-gold);
+  color: var(--poly-green);
+  background-color: rgba(21, 71, 52, 0.06);
+  box-shadow: 0 12px 24px rgba(21, 71, 52, 0.12);
   transform: translateY(-2px);
 }
 
