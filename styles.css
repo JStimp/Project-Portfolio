@@ -157,13 +157,42 @@ a {
 
 .about-section {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 3rem;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(2rem, 6vw, 5rem);
   align-items: start;
 }
 
-.about-section p:last-child {
-  font-size: 1.1rem;
+.about-heading {
+  border-left: 5px solid var(--mustang-gold);
+  padding-left: 1.25rem;
+}
+
+.about-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  max-width: 720px;
+}
+
+.about-title span {
+  display: block;
+}
+
+.about-copy {
+  max-width: 680px;
+  padding-top: 1.6rem;
+}
+
+.about-lead {
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  line-height: 1.35;
+  color: var(--poly-green);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.about-copy p:not(.about-lead) {
+  font-size: 1.05rem;
   color: var(--muted);
 }
 
