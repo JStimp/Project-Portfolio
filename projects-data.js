@@ -152,5 +152,26 @@ window.portfolioProjects = [
     placeholder: "[Project Image]",
     mediaPlaceholder: "[Add project media here]",
     url: "projects/project-name-06/index.html"
+  },
+  {
+    id: "project-name-07",
+    order: 7,
+    featured: true,
+    title: "[Project Name 07]",
+    tag: "[Capstone / Personal Build]",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this with a short project summary.",
+    story:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this section with a clear explanation of the engineering challenge, design decisions, testing process, and final outcome.",
+    role: "[Your Role]",
+    tools: ["Tool 1", "Tool 2", "Tool 3"],
+    timeline: "[Quarter / Year]",
+    outcome: "[Result / Metric / Deliverable]",
+    image: "",
+    detailImage: "",
+    imageAlt: "",
+    placeholder: "[Project Image]",
+    mediaPlaceholder: "[Add project media here]",
+    url: "projects/project-name-07/index.html"
   }
 ];
